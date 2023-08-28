@@ -1,0 +1,149 @@
+.home {
+    background-color: #a7bcff;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .homeContainer {
+        border: 1px solid black;
+        border-radius: 10px;
+        width: 65%;
+        height: 80%;
+        display: flex;
+        overflow: hidden;
+
+        .sidebar {
+            flex: 1;
+            background-color: #4e43a2;
+
+            .navbar {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                background-color: #2f2d52;
+                height: 50px;
+                padding: 10px;
+
+                .logo {
+                    font-size: 18px;
+                    color: whitesmoke;
+                    font-weight: bold;
+                }
+
+                .user {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    color: whitesmoke;
+
+                    img {
+                        width: 24px;
+                        height: 24px;
+                        background-color: aliceblue;
+                        object-fit: cover;
+                        border-radius: 50%;
+                    }
+
+                    button {
+                        background-color: #4e43a2;
+                        color: whitesmoke;
+                        font-size: 10px;
+                        border: none;
+                        cursor: pointer;
+                        padding: 5px;
+                        border-radius: 5px;
+                    }
+                }
+            }
+
+            .searchbar {
+                border-bottom: 1px solid #a7bcff;
+
+                .searchForm {
+                    padding: 10px;
+
+                    input {
+                        border: none;
+                        outline: none;
+                        background-color: transparent;
+                        color: whitesmoke;
+
+                        &::placeholder {
+                            color: lightcyan;
+                        }
+                    }
+                }
+            }
+
+            .userChat {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                padding: 10px;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: #2f2d52;
+                }
+
+                img {
+                    background-color: aliceblue;
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+
+                .userChatInfo {
+
+                    span {
+                        font-weight: 500;
+                        font-size: 18px;
+                        color: whitesmoke;
+                    }
+
+                    p {
+                        font-size: 14px;
+                        color: lightgray;
+                    }
+                }
+            }
+        }
+
+        .chat {
+            flex: 2;
+
+            .chatInfo{
+                background-color: #4e43a2;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                height: 50px;
+                padding: 10px;
+                color: whitesmoke;
+
+                .chatIcons {
+                    display: flex;
+                    gap: 10px;
+
+                    svg {
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .messages {
+                background-color: #ddddf7;
+                padding: 10px;
+                height: calc(100% - 160px);
+            }
+
+            .input {
+                background-color: whitesmoke;
+                height: 50px;
+                padding: 10px;
+            }
+        }
+    }
+}
