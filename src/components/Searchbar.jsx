@@ -3,7 +3,7 @@ const Searchbar = () => {
     return (
         <div className="searchbar">
             <div className="searchForm">
-                <input placeholder="Find a user"/>
+                <input type="text" placeholder="Find a user"/>
             </div>
             <div className="userChat">
                 <img src="" alt="" />
