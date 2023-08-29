@@ -155,16 +155,18 @@
                 background-color: #ddddf7;
                 padding: 10px;
                 height: calc(100% - 160px);
+                z-index: 1;
+                overflow: scroll;
 
+                &::-webkit-scrollbar {
+                    display: none;
+                }
+                
                 .message {
                     display: flex;
                     gap: 20px;
                     margin-bottom: 20px;
-                    overflow: scroll;
 
-                    &::-webkit-scrollbar {
-                        display: none;
-                    }
 
                     .messageInfo {
                         display: flex;
@@ -222,6 +224,7 @@
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
+                z-index: 100;
 
                 input {
                     width: 100%;

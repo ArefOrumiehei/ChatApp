@@ -6,11 +6,14 @@ import App from './App.jsx'
 //Styles
 import './index.css'
 import AuthContextProvider from './context/AuthContextProvider.jsx'
+import ChatContextProvider from './context/ChatContextProvider.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <AuthContextProvider>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>,
+    <ChatContextProvider>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>,
+    </ChatContextProvider>
   </AuthContextProvider>
 )

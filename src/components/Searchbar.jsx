@@ -65,7 +65,7 @@ const Searchbar = () => {
         }
     
         setUser(null);
-        setUserName("")
+        setUserName("");
         };
 
     return (
