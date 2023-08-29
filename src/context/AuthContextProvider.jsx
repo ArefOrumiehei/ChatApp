@@ -14,7 +14,7 @@ const AuthContextProvider = ({children}) => {
             setCurrentUser(user)
             console.log(user);
         })
-    })
+    },[])
     
     return (
         <AuthContext.Provider value={{currentUser}}>
