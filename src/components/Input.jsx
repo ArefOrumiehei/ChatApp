@@ -1,12 +1,17 @@
 //Icons
-import { IconPaperclip, IconPhoto, IconSend } from "@tabler/icons-react";
 import { useContext, useState } from "react";
-import { AuthContext } from "../context/AuthContextProvider";
-import { ChatContext } from "../context/ChatContextProvider";
 import { getDownloadURL, ref, uploadBytesResumable } from "firebase/storage";
+import { Timestamp, arrayUnion, doc, serverTimestamp, updateDoc } from "firebase/firestore";
 import { db, storage } from "../firebase";
 import { v4 } from "uuid";
-import { Timestamp, arrayUnion, doc, serverTimestamp, updateDoc } from "firebase/firestore";
+
+//Icons
+import { IconPaperclip, IconPhoto, IconSend } from "@tabler/icons-react";
+
+//Contexts
+import { AuthContext } from "../context/AuthContextProvider";
+import { ChatContext } from "../context/ChatContextProvider";
+
 
 const Input = () => {
 

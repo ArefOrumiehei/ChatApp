@@ -1,6 +1,8 @@
 import { useContext } from 'react'
 import { signOut } from "firebase/auth";
 import { auth } from "../firebase";
+
+//Contexts
 import { AuthContext } from '../context/AuthContextProvider'
 
 const Navbar = () => {

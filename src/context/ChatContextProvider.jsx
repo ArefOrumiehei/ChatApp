@@ -1,5 +1,7 @@
 import { createContext, useContext, useReducer } from 'react';
 import PropTypes from 'prop-types'
+
+//Contexts
 import { AuthContext } from './AuthContextProvider';
 
 export const ChatContext = createContext()

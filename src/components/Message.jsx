@@ -1,7 +1,10 @@
 import { useContext, useEffect, useRef } from "react";
+import PropTypes from 'prop-types'
+
+//Contexts
 import { AuthContext } from "../context/AuthContextProvider";
 import { ChatContext } from "../context/ChatContextProvider";
-import PropTypes from 'prop-types'
+
 
 const Message = ({message}) => {
 

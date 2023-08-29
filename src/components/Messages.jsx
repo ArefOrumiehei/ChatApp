@@ -1,9 +1,13 @@
-//Components
 import { useContext, useEffect, useState } from 'react';
-import Message from './Message'
-import { ChatContext } from '../context/ChatContextProvider';
 import { doc, onSnapshot } from 'firebase/firestore';
 import { db } from '../firebase';
+
+//Contexts
+import { ChatContext } from '../context/ChatContextProvider';
+
+//Components
+import Message from './Message'
+
 
 const Messages = () => {
 

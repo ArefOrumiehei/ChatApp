@@ -1,6 +1,7 @@
 import ReactDOM from 'react-dom/client'
 import { BrowserRouter } from 'react-router-dom'
 
+//Components
 import App from './App.jsx'
 
 //Styles
@@ -13,7 +14,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <ChatContextProvider>
       <BrowserRouter>
         <App />
-      </BrowserRouter>,
+      </BrowserRouter>
     </ChatContextProvider>
   </AuthContextProvider>
 )
