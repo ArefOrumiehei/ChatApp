@@ -17,9 +17,11 @@ const Signup = () => {
     const navigate = useNavigate()
 
     const [error , setError] = useState(false)
+    const [loading, setLoading] = useState(false);
 
     const submitHandler = async (e) => {
         e.preventDefault()
+        setLoading(true)
 
         const displayName = e.target[0].value
         const email = e.target[1].value
@@ -77,6 +79,7 @@ const Signup = () => {
         }catch (error) {
             setError(true)
             // console.log(error);
+            setLoading(false)
         }
     }
 
@@ -94,8 +97,9 @@ const Signup = () => {
                         <IconPhotoPlus size={32}/>
                         <span>Add an avatar</span>
                     </label>
-                    <button>Sign Up</button>
+                    <button disabled={loading}>Sign Up</button>
                 </form>
+                {loading && "Uploading and compressing the image please wait..."}
                 {error && <span>Something went error!</span>}
                 <p>Already have an account? <Link to='/login'>Login</Link></p>
             </div>
